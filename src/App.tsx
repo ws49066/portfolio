@@ -1,16 +1,24 @@
 // import Menu from "./components/Menu"
+import Menu from "./components/Menu"
+import AppRoutes from "./routes/routes"
+import { useLocation } from "react-router"
 
 
 function App() {
 
+  const location = useLocation()
+
+  const hiddenMenu = location.pathname === '/404'
+
   return (
-    <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
-     
-      <footer className="bg-gray-900 text-white text-center py-4">
-        © {new Date().getFullYear()} - Desenvolvido por Você 🚀
-      </footer>
+    <div className="w-full h-full px-70">
+      {!hiddenMenu && <Menu />}
+      <main className="">
+        <AppRoutes />
+      </main>
     </div>
   )
 }
+
 
 export default App

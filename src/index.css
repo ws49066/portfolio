@@ -1,17 +1,36 @@
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(../src/assets/fonts/JetBrainsMono-Regular.ttf);
+}  
+
 @import "tailwindcss";
 
-@theme {
-  --color-menu-gray: #222222; 
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
+@keyframes rotate-reverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-rotate-slow {
+  animation: rotate 10s linear infinite;
+}
+.animate-rotate-reverse {
+  animation: rotate-reverse 10s linear infinite;
+}
+.glow {
+  box-shadow: 0 0 20px 5px rgba(34, 255, 140, 0.3);
+}
+
+*{
+  box-sizing: border-box;
+}
+
 
 :root {
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #161513;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  background-color: #1C1B22;
+}  
 
