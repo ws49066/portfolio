@@ -22,14 +22,17 @@ export default function Menu() {
     return (
         <nav className="
             flex 
-            justify-end 
-            p-5 
+            justify-end
+            text-base
+            font-medium
+            p-5
+            mb-5 
             bg-menu-gray
-            font-jetbrains
+            font-[JetBrainsMono]
             "
             
         >
-            <ul className="flex w-1/3 justify-around">
+            <ul className="flex gap-5 justify-between flex-nowrap ">
                 {
                     LISTOFLINKS.map((link) => (
                         <li key={link.path}>
