@@ -25,8 +25,8 @@ export default function Menu() {
             justify-end
             text-base
             font-medium
-            p-5
-            mb-5 
+            p-10
+            mb-12
             bg-menu-gray
             font-[JetBrainsMono]
             "
