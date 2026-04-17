@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Menu from "./components/Menu"
+import AppRoutes from "./routes/routes"
+import { useLocation } from "react-router"
+import { LanguageProvider } from "./context/LanguageContext"
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const location = useLocation()
+
+  const hiddenMenu = location.pathname === '/404'
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <LanguageProvider>
+      <div className="w-full min-h-screen bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800">
+        {!hiddenMenu && <Menu />}
+        <main className={`${!hiddenMenu ? 'pt-20' : ''} px-4 md:px-8 lg:px-12 max-w-7xl mx-auto w-full`}>
+          <AppRoutes />
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </LanguageProvider>
   )
 }
+
 
 export default App
