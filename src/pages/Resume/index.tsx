@@ -56,11 +56,6 @@ export default function Resume() {
         },
     ];
 
-    const languages = [
-        { language: 'Português', level: 'Nativo' },
-        { language: 'Inglês', level: 'Intermediário-Avançado' },
-        { language: 'Italiano', level: 'Básico' },
-    ];
 
     return (
         <div className='font-[JetBrainsMono] py-12 space-y-20'>
