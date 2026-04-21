@@ -178,16 +178,20 @@ export default function Resume() {
 
                 <div className='space-y-6'>
                     {education.map((edu, idx) => (
-                        <div
+                         <div
                             key={idx}
-                            className='group bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-green-400/20 rounded-lg p-6 hover:border-green-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/10 hover:-translate-y-1'
+                            className='group relative pl-8 py-4 border-l-2 border-green-400/30 hover:border-green-400 transition-all duration-300'
                         >
-                            <div className='flex justify-between items-start mb-2'>
-                                <h3 className='text-lg font-bold text-white group-hover:text-green-400 transition-colors duration-300'>{edu.degree}</h3>
-                                <span className='text-xs text-gray-500 font-mono bg-slate-800/50 px-2 py-1 rounded'>{edu.year}</span>
+
+                            <div className='bg-gradient-to-br from-slate-800/50 to-slate-900/30 border border-green-400/20 rounded-lg p-6 group-hover:border-green-400/50 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-green-500/10 group-hover:-translate-y-1'>
+                                <div className='flex justify-between items-start mb-2'>
+                                    <h3 className='text-lg font-bold text-white transition-colors duration-300'>{edu.degree}</h3>
+                                    <span className='text-xs text-gray-500 font-mono bg-slate-800/50 px-2 py-1 rounded'>{edu.year}</span>
+                                </div>
+                                <p className='text-green-400 text-sm font-semibold mb-2'>{edu.school}</p>
                             </div>
-                            <p className='text-green-400 text-sm font-semibold'>{edu.school}</p>
                         </div>
+                        
                     ))}
                 </div>
             </section>
