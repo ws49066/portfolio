@@ -30,20 +30,12 @@ export default function Work() {
         },
         {
             id: 2,
-            name: t('work.projectCard.project2.name'),
-            description: t('work.projectCard.project2.description'),
-            technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe', 'Prisma'],
-            liveUrl: '#',
-            githubUrl: '#',
-            featured: true,
-        },
-        {
-            id: 3,
-            name: t('work.projectCard.project3.name'),
-            description: t('work.projectCard.project3.description'),
-            technologies: ['React', 'Firebase', 'Tailwind CSS', 'Zustand'],
-            liveUrl: '#',
-            githubUrl: '#',
+            name: 'Memory Game',
+            description: t('work.projectCard.project4.description'),
+            technologies: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Vercel'],
+            liveUrl: 'https://memory-game-nextjs-virid.vercel.app/',
+            githubUrl: 'https://github.com/ws49066/memory-game-nextjs',
+            image: 'https://api.microlink.io/?url=https%3A%2F%2Fmemory-game-nextjs-virid.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url',
             featured: true,
         },
     ];
@@ -140,7 +132,7 @@ export default function Work() {
                                     <img
                                         src={project.image}
                                         alt={`${project.name} preview`}
-                                        className='w-full h-full object-cover  object-[30%] group-hover:scale-105 transition-transform duration-700'
+                                        className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-700'
                                     />
                                 ) : (
                                     <div className='w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-800/50 to-slate-900/50'>

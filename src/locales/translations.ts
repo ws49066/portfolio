@@ -43,6 +43,10 @@ export const translations = {
           name: 'Task Management App',
           description: 'Collaborative task management application with real-time updates, user authentication, and advanced filtering.',
         },
+        project4: {
+          name: 'Memory Game',
+          description: 'An interactive and modern memory card game built with Next.js. Features include: card flip animations, score tracking, timer, multiple difficulty levels, and responsive design. A fun way to test your memory skills with a polished UI.',
+        },
       },
     },
     resume: {
@@ -58,7 +62,7 @@ export const translations = {
       formTitle: 'Send a Message',
       email: 'Email',
       message: 'Message',
-      send: 'Send Message',
+      send: 'Send via WhatsApp',
       phone: 'Phone',
       location: 'Location',
       name: 'Name',
@@ -121,6 +125,10 @@ export const translations = {
           name: 'Aplicativo de Gerenciamento de Tarefas',
           description: 'Aplicação colaborativa de gerenciamento de tarefas com atualizações em tempo real, autenticação de usuários e filtros avançados.',
         },
+        project4: {
+          name: 'Jogo da Memória',
+          description: 'Um jogo de cartas da memória interativo e moderno construído com Next.js. Recursos incluem: animações de virar cartas, contagem de pontos, cronômetro, múltiplos níveis de dificuldade e design responsivo. Uma forma divertida de testar suas habilidades de memória com uma interface polida.',
+        },
       },
     },
     resume: {
@@ -136,7 +144,7 @@ export const translations = {
       formTitle: 'Envie uma Mensagem',
       email: 'Email',
       message: 'Mensagem',
-      send: 'Enviar Mensagem',
+      send: 'Enviar pelo WhatsApp',
       phone: 'Telefone',
       location: 'Localização',
       name: 'Nome',
@@ -199,6 +207,10 @@ export const translations = {
           name: 'App di Gestione Attività',
           description: 'Applicazione collaborativa di gestione attività con aggiornamenti in tempo reale, autenticazione utenti e filtri avanzati.',
         },
+        project4: {
+          name: 'Gioco di Memoria',
+          description: 'Un gioco di carte interattivo e moderno costruito con Next.js. Funzionalità includono: animazioni di capovolgimento carte, tracciamento punteggio, timer, livelli di difficoltà multipli e design responsivo. Un modo divertente per testare le tue abilità di memoria con un interfaccia raffinata.',
+        },
       },
     },
     resume: {
@@ -214,7 +226,7 @@ export const translations = {
       formTitle: 'Invia un Messaggio',
       email: 'Email',
       message: 'Messaggio',
-      send: 'Invia Messaggio',
+      send: 'Invia su WhatsApp',
       phone: 'Telefono',
       location: 'Ubicazione',
       name: 'Nome',
