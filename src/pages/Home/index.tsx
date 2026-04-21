@@ -1,18 +1,25 @@
 import profile from '../../assets/images/profile.png';
 import GitHubIcon from '../../assets/images/githubIcon.svg';
 import LinkedinIcon from '../../assets/images/linkedinIcon.svg';
-import { Download, ArrowRight, Code2, Zap, Users } from 'lucide-react';
+import { Download, ArrowRight, X } from 'lucide-react';
 import { useTranslation } from '../../hooks/useTranslation';
 import { Link } from 'react-router';
+import { useState } from 'react';
 
 export default function Home() {
     const { t } = useTranslation();
+    const [showCVModal, setShowCVModal] = useState(false);
 
-    const stats = [
-        { icon: Code2, label: 'Years of Experience', value: '5+' },
-        { icon: Zap, label: 'Projects Completed', value: '50+' },
-        { icon: Users, label: 'Happy Clients', value: '30+' }
-    ];
+    const handleDownloadCV = (language: 'PT' | 'EN' | 'IT') => {
+        const fileName = `Wanderson-Resume-${language}.pdf`;
+        const link = document.createElement('a');
+        link.href = `/cv/${fileName}`;
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        setShowCVModal(false);
+    };
 
     return (
         <div className='font-[JetBrainsMono] space-y-16 lg:space-y-24'>
@@ -41,7 +48,10 @@ export default function Home() {
 
                     {/* CTA Buttons */}
                     <div className='flex flex-col sm:flex-row gap-4 pt-6'>
-                        <button className='flex gap-3 items-center justify-center text-white bg-gradient-to-r from-green-500 to-emerald-500 px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-green-500/50 hover:scale-105 duration-300 ease-in-out transition-all glow w-full sm:w-auto'>
+                        <button 
+                            onClick={() => setShowCVModal(true)}
+                            className='flex gap-3 items-center justify-center text-white bg-gradient-to-r from-green-500 to-emerald-500 px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-green-500/50 hover:scale-105 duration-300 ease-in-out transition-all glow w-full sm:w-auto'
+                        >
                             <Download size={20} />
                             {t('home.downloadCV')}
                         </button>
@@ -104,38 +114,48 @@ export default function Home() {
                 </aside>
             </div>
 
-            {/* Stats Section */}
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8'>
-                {stats.map((stat, index) => {
-                    const Icon = stat.icon;
-                    return (
-                        <div
-                            key={index}
-                            className='group bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-green-400/20 rounded-xl p-6 lg:p-8 hover:border-green-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/10 hover:-translate-y-2'
-                        >
-                            <div className='flex items-start justify-between mb-4'>
-                                <div className='p-3 rounded-lg bg-green-400/20 group-hover:bg-green-400/30 transition-colors duration-300'>
-                                    <Icon className='text-green-400' size={24} />
-                                </div>
-                            </div>
-                            <h3 className='text-3xl lg:text-4xl font-bold text-green-400 group-hover:text-green-300 transition-colors duration-300'>{stat.value}</h3>
-                            <p className='text-gray-400 text-sm mt-2'>{stat.label}</p>
+            {/* CV Language Selection Modal */}
+            {showCVModal && (
+                <div className='fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50'>
+                    <div className='bg-gradient-to-br from-slate-800 to-slate-900 border border-green-400/30 rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl shadow-green-500/20'>
+                        <div className='flex items-center justify-between mb-6'>
+                            <h3 className='text-2xl font-bold text-white'>{t('home.cvModal.title')}</h3>
+                            <button 
+                                onClick={() => setShowCVModal(false)}
+                                className='p-1 hover:bg-green-400/20 rounded-lg transition-colors'
+                            >
+                                <X className='text-gray-400 hover:text-green-400' size={24} />
+                            </button>
                         </div>
-                    );
-                })}
-            </div>
-
-            {/* Additional CTA Section */}
-            <div className='bg-gradient-to-r from-green-500/10 via-emerald-500/5 to-teal-500/10 border border-green-400/30 rounded-2xl p-8 lg:p-12 text-center hover:border-green-400/50 transition-all duration-300'>
-                <h2 className='text-2xl lg:text-4xl font-bold text-white mb-4'>Vamos trabalhar juntos?</h2>
-                <p className='text-gray-300 text-base lg:text-lg mb-6 max-w-2xl mx-auto'>
-                    Tenho experiência em transformar ideias em soluções digitais inovadoras. Pronto para o próximo desafio?
-                </p>
-                <Link to="/contact" className='inline-flex items-center gap-2 text-white bg-gradient-to-r from-green-500 to-emerald-500 px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-green-500/50 transition-all hover:scale-105'>
-                    Entrar em Contato
-                    <ArrowRight size={20} />
-                </Link>
-            </div>
+                        
+                        <p className='text-gray-300 text-sm mb-6'>{t('home.cvModal.subtitle')}</p>
+                        
+                        <div className='space-y-3'>
+                            <button 
+                                onClick={() => handleDownloadCV('PT')}
+                                className='w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105'
+                            >
+                                <Download size={18} />
+                                {t('home.cvModal.portuguese')}
+                            </button>
+                            <button 
+                                onClick={() => handleDownloadCV('EN')}
+                                className='w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105'
+                            >
+                                <Download size={18} />
+                                {t('home.cvModal.english')}
+                            </button>
+                            <button 
+                                onClick={() => handleDownloadCV('IT')}
+                                className='w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105'
+                            >
+                                <Download size={18} />
+                                {t('home.cvModal.italian')}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
