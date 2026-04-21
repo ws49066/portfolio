@@ -1,5 +1,5 @@
 import { useTranslation } from '../../hooks/useTranslation';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, CheckCircle, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -19,7 +19,12 @@ export default function Contact() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
+
+        const phoneNumber = '393937192154'; // +39 393 719 2154 sem espaços e +
+        const text = `*New message from Portfolio*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Subject:* ${formData.subject}%0A%0A*Message:*%0A${formData.message}`;
+
+        window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+
         setSubmitted(true);
         setFormData({ name: '', email: '', subject: '', message: '' });
         setTimeout(() => setSubmitted(false), 5000);
@@ -36,7 +41,7 @@ export default function Contact() {
             icon: Phone,
             label: t('contact.phone'),
             value: t('contact.contactPhone'),
-            link: `tel:${t('contact.contactPhone').replace(/\s/g, '')}`,
+            link: `#`,
         },
         {
             icon: MapPin,
@@ -161,7 +166,7 @@ export default function Contact() {
                         type='submit'
                         className='w-full inline-flex items-center justify-center gap-2 text-white bg-gradient-to-r from-green-500 to-emerald-500 px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 active:scale-95'
                     >
-                        <Send size={20} />
+                        <MessageCircle size={20} />
                         {t('contact.send')}
                     </button>
                 </form>
