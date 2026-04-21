@@ -29,19 +29,19 @@ export default function Contact() {
         {
             icon: Mail,
             label: t('contact.email'),
-            value: 'wanderson@example.com',
-            link: 'mailto:wanderson@example.com',
+            value: t('contact.contactEmail'),
+            link: `mailto:${t('contact.contactEmail')}`,
         },
         {
             icon: Phone,
             label: t('contact.phone'),
-            value: '+55 (11) 99999-9999',
-            link: 'tel:+5511999999999',
+            value: t('contact.contactPhone'),
+            link: `tel:${t('contact.contactPhone').replace(/\s/g, '')}`,
         },
         {
             icon: MapPin,
             label: t('contact.location'),
-            value: 'São Paulo, Brasil',
+            value: t('contact.contactLocation'),
             link: '#',
         },
     ];
@@ -82,12 +82,12 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className='bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-green-400/20 rounded-2xl p-8 lg:p-12 hover:border-green-400/30 transition-all duration-300'>
-                <h2 className='text-2xl lg:text-3xl font-bold text-white mb-8'>Envie uma mensagem</h2>
+                <h2 className='text-2xl lg:text-3xl font-bold text-white mb-8'>{t('contact.formTitle')}</h2>
 
                 {submitted && (
                     <div className='mb-8 p-4 bg-green-400/20 border border-green-400/50 rounded-lg flex items-center gap-3 animate-pulse'>
                         <CheckCircle className='text-green-400' size={24} />
-                        <span className='text-green-400 font-semibold'>Mensagem enviada com sucesso!</span>
+                        <span className='text-green-400 font-semibold'>{t('contact.successMessage')}</span>
                     </div>
                 )}
 
@@ -95,7 +95,7 @@ export default function Contact() {
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div className='group'>
                             <label htmlFor='name' className='block text-sm font-semibold text-gray-300 mb-2 group-focus-within:text-green-400 transition-colors'>
-                                Nome *
+                                {t('contact.nameLabel')} *
                             </label>
                             <input
                                 type='text'
@@ -103,14 +103,14 @@ export default function Contact() {
                                 name='name'
                                 value={formData.name}
                                 onChange={handleChange}
-                                placeholder='Seu nome'
+                                placeholder={t('contact.namePlaceholder')}
                                 className='w-full bg-slate-900/50 border border-green-400/30 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-green-400 focus:shadow-lg focus:shadow-green-500/20 transition-all duration-300'
                                 required
                             />
                         </div>
                         <div className='group'>
                             <label htmlFor='email' className='block text-sm font-semibold text-gray-300 mb-2 group-focus-within:text-green-400 transition-colors'>
-                                Email *
+                                {t('contact.emailLabel')} *
                             </label>
                             <input
                                 type='email'
@@ -118,7 +118,7 @@ export default function Contact() {
                                 name='email'
                                 value={formData.email}
                                 onChange={handleChange}
-                                placeholder='seu@email.com'
+                                placeholder={t('contact.emailPlaceholder')}
                                 className='w-full bg-slate-900/50 border border-green-400/30 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-green-400 focus:shadow-lg focus:shadow-green-500/20 transition-all duration-300'
                                 required
                             />
@@ -127,7 +127,7 @@ export default function Contact() {
 
                     <div className='group'>
                         <label htmlFor='subject' className='block text-sm font-semibold text-gray-300 mb-2 group-focus-within:text-green-400 transition-colors'>
-                            Assunto *
+                            {t('contact.subjectLabel')} *
                         </label>
                         <input
                             type='text'
@@ -135,7 +135,7 @@ export default function Contact() {
                             name='subject'
                             value={formData.subject}
                             onChange={handleChange}
-                            placeholder='Assunto do projeto'
+                            placeholder={t('contact.subjectPlaceholder')}
                             className='w-full bg-slate-900/50 border border-green-400/30 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-green-400 focus:shadow-lg focus:shadow-green-500/20 transition-all duration-300'
                             required
                         />
@@ -143,14 +143,14 @@ export default function Contact() {
 
                     <div className='group'>
                         <label htmlFor='message' className='block text-sm font-semibold text-gray-300 mb-2 group-focus-within:text-green-400 transition-colors'>
-                            Mensagem *
+                            {t('contact.messageLabel')} *
                         </label>
                         <textarea
                             id='message'
                             name='message'
                             value={formData.message}
                             onChange={handleChange}
-                            placeholder='Conte-me sobre seu projeto...'
+                            placeholder={t('contact.messagePlaceholder')}
                             rows={5}
                             className='w-full bg-slate-900/50 border border-green-400/30 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-green-400 focus:shadow-lg focus:shadow-green-500/20 transition-all duration-300 resize-none'
                             required
@@ -165,13 +165,6 @@ export default function Contact() {
                         {t('contact.send')}
                     </button>
                 </form>
-            </div>
-
-            {/* Additional Info */}
-            <div className='bg-gradient-to-r from-green-500/10 via-emerald-500/5 to-teal-500/10 border border-green-400/30 rounded-2xl p-8 text-center'>
-                <p className='text-gray-300 text-base'>
-                    Respondo a todos os emails dentro de 24 horas. Fico ansioso para saber mais sobre seu projeto!
-                </p>
             </div>
         </div>
     );
