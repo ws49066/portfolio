@@ -18,18 +18,42 @@ export default function Work() {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     const projects: Project[] = [
-        {
+         {
             id: 1,
+            name: 'TimeHub',
+            description: t('work.projectCard.project3.description'),
+            technologies: [
+                'Next.js 16', 
+                'React 19', 
+                'TypeScript', 
+                'Tailwind CSS 4', 
+                'Zustand', 
+                'React Hook Form + Zod',
+                'Axios',
+                'next-pwa',
+                'Express.js',
+                'Mysql 8.4',
+                'JWT',
+                'Bcrypt',
+                'Docker',
+                'Vercel'],
+            liveUrl: 'https://time-hub-frontend.vercel.app/',
+            githubUrl: 'https://github.com/ws49066/TimeHub_frontend',
+            image: 'https://api.microlink.io/?url=https%3A%2F%2Ftime-hub-frontend.vercel.app%2F&screenshot=true&meta=true&embed=screenshot.url',
+            featured: true,
+        },
+        {
+            id: 2,
             name: 'Pokédex',
             description: t('work.projectCard.project1.description'),
             technologies: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'PokéAPI', 'Vercel'],
             liveUrl: 'https://pokedex-nextjs-ochre.vercel.app/',
             githubUrl: 'https://github.com/ws49066/pokedex_nextjs',
-            image: 'https://api.microlink.io/?url=https%3A%2F%2Fpokedex-nextjs-ochre.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url',
+            image: 'https://api.microlink.io/?url=https%3A%2F%2Fpokedex-nextjs-ochre.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url&waitForSelector=.pokemon-card',
             featured: true,
         },
         {
-            id: 2,
+            id: 3,
             name: 'Memory Game',
             description: t('work.projectCard.project4.description'),
             technologies: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Vercel'],
@@ -38,6 +62,7 @@ export default function Work() {
             image: 'https://api.microlink.io/?url=https%3A%2F%2Fmemory-game-nextjs-virid.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url',
             featured: true,
         },
+       
     ];
 
     return (

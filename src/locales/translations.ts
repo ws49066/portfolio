@@ -40,8 +40,8 @@ export const translations = {
           description: 'Full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management.',
         },
         project3: {
-          name: 'Task Management App',
-          description: 'Collaborative task management application with real-time updates, user authentication, and advanced filtering.',
+          name: 'TimeHub – Appointment Management System',
+          description: 'TimeHub is a scheduling solution that allows administrators to manage clients, rooms, and appointments, while enabling customers to book services easily.',
         },
         project4: {
           name: 'Memory Game',
@@ -122,8 +122,8 @@ export const translations = {
           description: 'Solução e-commerce full-stack com integração de pagamento, painel administrativo e gerenciamento de inventário em tempo real.',
         },
         project3: {
-          name: 'Aplicativo de Gerenciamento de Tarefas',
-          description: 'Aplicação colaborativa de gerenciamento de tarefas com atualizações em tempo real, autenticação de usuários e filtros avançados.',
+          name: 'TimeHub - Sistema de Gerenciamento de Agendamentos',
+          description: 'TimeHub é uma solução de agendamento que permite administradores gerenciarem clientes, salas e agendamentos, enquanto clientes agendam serviços de forma simples.',
         },
         project4: {
           name: 'Jogo da Memória',
@@ -204,8 +204,8 @@ export const translations = {
           description: 'Soluzione e-commerce full-stack con integrazione pagamenti, dashboard amministrativo e gestione inventario in tempo reale.',
         },
         project3: {
-          name: 'App di Gestione Attività',
-          description: 'Applicazione collaborativa di gestione attività con aggiornamenti in tempo reale, autenticazione utenti e filtri avanzati.',
+          name: 'TimeHub – Sistema di Gestione degli Appuntamenti',
+          description: 'TimeHub è una soluzione di prenotazione che consente agli amministratori di gestire clienti, sale e appuntamenti, mentre i clienti possono prenotare servizi in modo semplice e intuitivo.',
         },
         project4: {
           name: 'Gioco di Memoria',
