@@ -7,9 +7,16 @@ export default function Resume() {
     const experiencesData = {
         pt: [
             {
+                company: 'Contabilizei',
+                position: 'Desenvolvedor de Software - Pleno',
+                period: '02/2026 - Atual',
+                location: 'Curitiba, PR, Brasil',
+                description: 'Desenvolvimento e manutenção de mais de 21 bots de automação para o processo de abertura de empresas (CNPJ). Utilizo Python, FastAPI, Flask, Playwright e GCP para automatizar interações com portais governamentais, reduzindo a intervenção manual e acelerando o onboarding de clientes.',
+            },
+            {
                 company: 'Sidia Instituto de Ciência e Tecnologia',
                 position: 'Desenvolvedor de Software - Pleno',
-                period: '07/2022 - Atual',
+                period: '07/2022 - 02/2026',
                 location: 'Manaus, AM, Brasil',
                 description: 'Desenvolvedor full stack trabalhando em múltiplos projetos incluindo validador de binários Samsung, chatbot com IA/NLP e gerenciador de amostras Android. Utilizo Next.js, TypeScript, Python, LLM e Docker.',
             },
@@ -30,9 +37,16 @@ export default function Resume() {
         ],
         en: [
             {
+                company: 'Contabilizei',
+                position: 'Mid-Level Software Developer',
+                period: '02/2026 - Present',
+                location: 'Curitiba, PR, BRAZIL',
+                description: 'Develop and maintain over 21 automation bots for the company registration (CNPJ) process. Using Python, FastAPI, Flask, Playwright, and GCP to automate government portal interactions, reducing manual effort and accelerating customer onboarding.',
+            },
+            {
                 company: 'Sidia Instituto de Ciência e Tecnologia',
                 position: 'Mid-Level Software Developer',
-                period: '07/2022 - Present',
+                period: '07/2022 - 02/2026',
                 location: 'Manaus, AM, Brazil',
                 description: 'Full stack developer working on multiple projects including Samsung binary code validator, AI/NLP chatbot, and Android sample manager. I use Next.js, TypeScript, Python, LLM, and Docker.',
             },
@@ -53,9 +67,16 @@ export default function Resume() {
         ],
         it: [
             {
+                company: 'Contabilizei',
+                position: 'Sviluppatore di Software Mid-Level',
+                period: '02/2026 - Presente',
+                location: 'Curitiba, PR, Brasile',
+                description: `Sviluppo e manutenzione di oltre 21 bot di automazione per il processo di costituzione delle imprese (CNPJ). Utilizzo Python, FastAPI, Flask, Playwright e GCP per automatizzare le interazioni con i portali governativi, riducendo l'intervento manuale e accelerando l'onboarding dei clienti.`,
+            },
+            {
                 company: 'Sidia Instituto de Ciência e Tecnologia',
                 position: 'Sviluppatore di Software Mid-Level',
-                period: '07/2022 - Presente',
+                period: '07/2022 - 02/2026',
                 location: 'Manaus, AM, Brasile',
                 description: 'Sviluppatore fullstack che lavora su più progetti inclusi validatore di codice binario Samsung, chatbot con IA/NLP e gestore di campioni Android. Utilizzo Next.js, TypeScript, Python, LLM e Docker.',
             },
@@ -109,19 +130,19 @@ export default function Resume() {
     const skills = [
         {
             category: 'Frontend',
-            skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'Styled-Components', 'Redux', 'Zustand', 'Axios'],
+            skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Styled-Components', 'Zustand', 'Axios', 'Playwright'],
         },
         {
             category: 'Backend',
-            skills: ['Node.js', 'Express', 'Python', 'FastAPI', 'FlaskAPI', 'PostgreSQL', 'MongoDB', 'JWT', 'Entity Framework'],
+            skills: ['Node.js', 'Express', 'Python', 'FastAPI', 'FlaskAPI', 'PostgreSQL', 'MongoDB', 'JWT'],
         },
         {
-            category: 'DevOps & Tools',
-            skills: ['Docker', 'Git', 'CI/CD', 'Linux', 'GitHub Actions'],
+            category: 'DevOps & Cloud',
+            skills: ['Docker', 'Git', 'CI/CD', 'Linux', 'GitHub Actions', 'Google Cloud Platform', 'Jenkins'],
         },
         {
             category: 'IA & Others',
-            skills: ['LLM', 'LangChain', 'Qdrant', 'NLP', 'Botpress', 'Ollama'],
+            skills: ['LLM', 'LangChain', 'RAG', 'Qdrant', 'NLP', 'Botpress', 'Ollama'],
         },
     ];
 
