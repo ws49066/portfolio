@@ -36,14 +36,18 @@ export const translations = {
           description: 'A modern and responsive web application to explore the world of Pokémon. Features include: real-time grid layout, search by name, filtering by type (18 categories), infinite scroll, individual pages with animated statistics and graphical visualizations. Connected to PokéAPI for real-time data.',
         },
         project2: {
-          name: 'E-Commerce Platform',
-          description: 'Full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management.',
-        },
-        project3: {
-          name: 'TimeHub – Appointment Management System',
+          name: 'TimeHub - Appointment Management System',
           description: 'TimeHub is a scheduling solution that allows administrators to manage clients, rooms, and appointments, while enabling customers to book services easily.',
         },
+        project3: {
+          name: 'Loan Management Dashboard',
+          description: 'Web platform for managing loans, clients, installments, and payments. The system provides secure authentication, financial dashboards, contract tracking, and an intuitive interface for real-time administrative operations.',
+        },
         project4: {
+          name: 'Loan Management API',
+          description: 'RESTful API for managing loans, clients, installments, and payments. The system includes JWT authentication, role-based access control (RBAC), loan simulation, automatic installment generation, and an analytical dashboard for financial monitoring.',
+        },
+        project5: {
           name: 'Memory Game',
           description: 'An interactive and modern memory card game built with Next.js. Features include: card flip animations, score tracking, timer, multiple difficulty levels, and responsive design. A fun way to test your memory skills with a polished UI.',
         },
@@ -118,14 +122,18 @@ export const translations = {
           description: 'Um aplicativo web moderno e responsivo para explorar o mundo dos Pokémon. Features incluem: grid layout com visualização em tempo real, busca por nome, filtragem por tipo (18 categorias), scroll infinito, páginas individuais com estatísticas animadas e visualizações gráficas. Conectado à PokéAPI para dados em tempo real.',
         },
         project2: {
-          name: 'Plataforma E-Commerce',
-          description: 'Solução e-commerce full-stack com integração de pagamento, painel administrativo e gerenciamento de inventário em tempo real.',
-        },
-        project3: {
           name: 'TimeHub - Sistema de Gerenciamento de Agendamentos',
           description: 'TimeHub é uma solução de agendamento que permite administradores gerenciarem clientes, salas e agendamentos, enquanto clientes agendam serviços de forma simples.',
         },
+        project3: {
+          name: 'Loan Management Dashboard',
+          description: 'Plataforma web para gestão de empréstimos, clientes, parcelas e pagamentos. O sistema oferece autenticação segura, dashboards financeiros, acompanhamento de contratos e uma interface intuitiva para operações administrativas em tempo real.',
+        },
         project4: {
+          name: 'Loan Management API',
+          description: 'API RESTful para gestão de empréstimos, clientes, parcelas e pagamentos. O sistema oferece autenticação JWT, controle de acesso baseado em papéis (RBAC), simulação de empréstimos, geração automática de parcelas e dashboard analítico para acompanhamento financeiro.',
+        },
+        project5: {
           name: 'Jogo da Memória',
           description: 'Um jogo de cartas da memória interativo e moderno construído com Next.js. Recursos incluem: animações de virar cartas, contagem de pontos, cronômetro, múltiplos níveis de dificuldade e design responsivo. Uma forma divertida de testar suas habilidades de memória com uma interface polida.',
         },
@@ -200,14 +208,18 @@ export const translations = {
           description: 'Una applicazione web moderna e responsiva per esplorare il mondo dei Pokémon. Funzionalità includono: layout a griglia in tempo reale, ricerca per nome, filtraggio per tipo (18 categorie), scroll infinito, pagine individuali con statistiche animate e visualizzazioni grafiche. Connessa alla PokéAPI per dati in tempo reale.',
         },
         project2: {
-          name: 'Piattaforma E-Commerce',
-          description: 'Soluzione e-commerce full-stack con integrazione pagamenti, dashboard amministrativo e gestione inventario in tempo reale.',
-        },
-        project3: {
           name: 'TimeHub – Sistema di Gestione degli Appuntamenti',
           description: 'TimeHub è una soluzione di prenotazione che consente agli amministratori di gestire clienti, sale e appuntamenti, mentre i clienti possono prenotare servizi in modo semplice e intuitivo.',
         },
+        project3: {
+          name: 'Loan Management Dashboard',
+          description: "Piattaforma web per la gestione di prestiti, clienti, rate e pagamenti. Il sistema offre autenticazione sicura, dashboard finanziarie, monitoraggio dei contratti e un'interfaccia intuitiva per le operazioni amministrative in tempo reale.",
+        },
         project4: {
+          name: 'Loan Management API',
+          description: 'API RESTful per la gestione di prestiti, clienti, rate e pagamenti. Il sistema include autenticazione JWT, controllo degli accessi basato sui ruoli (RBAC), simulazione dei prestiti, generazione automatica delle rate e una dashboard analitica per il monitoraggio finanziario.',
+        },
+        project5: {
           name: 'Gioco di Memoria',
           description: 'Un gioco di carte interattivo e moderno costruito con Next.js. Funzionalità includono: animazioni di capovolgimento carte, tracciamento punteggio, timer, livelli di difficoltà multipli e design responsivo. Un modo divertente per testare le tue abilità di memoria con un interfaccia raffinata.',
         },

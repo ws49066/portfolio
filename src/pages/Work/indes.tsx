@@ -18,16 +18,57 @@ export default function Work() {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     const projects: Project[] = [
-         {
+        {
             id: 1,
-            name: 'TimeHub',
+            name: 'Loan Management Dashboard',
             description: t('work.projectCard.project3.description'),
             technologies: [
-                'Next.js 16', 
-                'React 19', 
-                'TypeScript', 
-                'Tailwind CSS 4', 
-                'Zustand', 
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Axios",
+                "React Hook Form",
+                "Zod",
+                "Zustand",
+                "JWT Authentication",
+                "Vercel"],
+            liveUrl: 'https://loan-management-frontend-nine.vercel.app/login',
+            githubUrl: 'https://github.com/ws49066/TimeHub_frontend',
+            image: 'https://api.microlink.io/?url=https%3A%2F%2Floan-management-frontend-nine.vercel.app%2F&screenshot=true&meta=true&embed=screenshot.url',
+            featured: true,
+        },
+        {
+            id: 2,
+            name: 'Loan Management API',
+            description: t('work.projectCard.project4.description'),
+            technologies: [
+                "Python 3.12",
+                "FastAPI",
+                "SQLAlchemy 2.0",
+                "PostgreSQL",
+                "Alembic",
+                "Pydantic",
+                "JWT Authentication",
+                "RBAC",
+                "Pytest",
+                "Docker",
+                "Docker Compose"],
+            liveUrl: 'https://loan-management-backend-w4by.onrender.com/docs',
+            githubUrl: 'https://github.com/ws49066/TimeHub_backend',
+            image: 'https://api.microlink.io/?url=https%3A%2F%2Floan-management-backend-w4by.onrender.com%2Fdocs&screenshot=true&meta=true&embed=screenshot.url&waitUntil=networkidle2&delay=10000',
+            featured: true,
+        },
+        {
+            id: 3,
+            name: 'TimeHub',
+            description: t('work.projectCard.project2.description'),
+            technologies: [
+                'Next.js 16',
+                'React 19',
+                'TypeScript',
+                'Tailwind CSS 4',
+                'Zustand',
                 'React Hook Form + Zod',
                 'Axios',
                 'next-pwa',
@@ -39,11 +80,11 @@ export default function Work() {
                 'Vercel'],
             liveUrl: 'https://time-hub-frontend.vercel.app/',
             githubUrl: 'https://github.com/ws49066/TimeHub_frontend',
-            image: 'https://api.microlink.io/?url=https%3A%2F%2Ftime-hub-frontend.vercel.app%2F&screenshot=true&meta=true&embed=screenshot.url',
+            image: 'https://api.microlink.io/?url=https%3A%2F%2Ftime-hub-frontend.vercel.app%2F&screenshot=true&meta=true&embed=screenshot.url&waitUntil=networkidle2&delay=10000',
             featured: true,
         },
         {
-            id: 2,
+            id: 4,
             name: 'Pokédex',
             description: t('work.projectCard.project1.description'),
             technologies: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'PokéAPI', 'Vercel'],
@@ -53,16 +94,16 @@ export default function Work() {
             featured: true,
         },
         {
-            id: 3,
+            id: 5,
             name: 'Memory Game',
-            description: t('work.projectCard.project4.description'),
+            description: t('work.projectCard.project5.description'),
             technologies: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Vercel'],
             liveUrl: 'https://memory-game-nextjs-virid.vercel.app/',
             githubUrl: 'https://github.com/ws49066/memory-game-nextjs',
             image: 'https://api.microlink.io/?url=https%3A%2F%2Fmemory-game-nextjs-virid.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url',
             featured: true,
         },
-       
+
     ];
 
     return (
@@ -80,9 +121,8 @@ export default function Work() {
                 {projects.map((project, index) => (
                     <div
                         key={project.id}
-                        className={`group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-green-400/20 rounded-2xl overflow-hidden hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20 md:min-h-[450px] ${
-                            index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-                        }`}
+                        className={`group relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-green-400/20 rounded-2xl overflow-hidden hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20 md:min-h-[450px] ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                            }`}
                     >
                         <div className='absolute inset-0 bg-gradient-to-r from-green-500/5 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
 
