@@ -10,7 +10,7 @@ export const translations = {
       title: 'Software Developer',
       greeting: 'Hello I am',
       name: 'Wanderson Oliveira',
-      description: 'I am a fullstack software developer with over five years of experience in high-impact, high-performance projects. I have worked on complex systems, Android applications, and video streaming solutions, always focused on efficiency and quality.',
+      description: `Full Stack Software Engineer with 5+ years of experience building scalable web applications, automation platforms, and cloud-native solutions. Specialized in React, Next.js, Python, and modern backend architectures, with hands-on experience designing high-impact automation systems that streamline complex business processes and significantly reduce manual effort.`,
       downloadCV: 'Download CV',
       viewProjects: 'View Projects',
       cvModal: {
@@ -96,8 +96,7 @@ export const translations = {
       title: 'Desenvolvedor de Software',
       greeting: 'Olá, eu sou',
       name: 'Wanderson Oliveira',
-      description: 'Sou um desenvolvedor fullstack com mais de cinco anos de experiência em projetos de alto impacto e alto desempenho. Trabalhei com sistemas complexos, aplicações Android e soluções de streaming de vídeo, sempre focado em eficiência e qualidade.',
-      downloadCV: 'Baixar CV',
+      description: `Engenheiro de Software Full Stack com mais de 5 anos de experiência no desenvolvimento de aplicações web escaláveis, plataformas de automação e soluções em nuvem. Especializado em React, Next.js, Python e arquiteturas modernas de backend, com atuação em frontend, backend, DevOps e Google Cloud Platform.`,
       viewProjects: 'Ver Projetos',
       cvModal: {
         title: 'Escolha o Idioma do CV',
@@ -182,7 +181,7 @@ export const translations = {
       title: 'Sviluppatore Software',
       greeting: 'Ciao, sono',
       name: 'Wanderson Oliveira',
-      description: 'Sono uno sviluppatore fullstack con oltre cinque anni di esperienza in progetti ad alto impatto e alte prestazioni. Ho lavorato su sistemi complessi, applicazioni Android e soluzioni di streaming video, sempre focalizzato su efficienza e qualità.',
+      description: `Ingegnere Software Full Stack con oltre 5 anni di esperienza nello sviluppo di applicazioni web scalabili, piattaforme di automazione e soluzioni cloud. Specializzato in React, Next.js, Python e moderne architetture backend, con esperienza in frontend, backend, DevOps e Google Cloud Platform.`,
       downloadCV: 'Scarica CV',
       viewProjects: 'Visualizza Progetti',
       cvModal: {
