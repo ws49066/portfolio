@@ -23,7 +23,7 @@ export const translations = {
     },
     work: {
       title: 'Featured Projects',
-      subtitle: 'Showcasing my best work deployed on Vercel',
+      subtitle: 'My Projects',
       viewLive: 'View Live',
       sourceCode: 'Source Code',
       technologies: 'Technologies',
@@ -109,7 +109,7 @@ export const translations = {
     },
     work: {
       title: 'Projetos em Destaque',
-      subtitle: 'Meus melhores trabalhos implantados no Vercel',
+      subtitle: 'Meus Projetos',
       viewLive: 'Ver ao Vivo',
       sourceCode: 'Código Fonte',
       technologies: 'Tecnologias',
@@ -195,7 +195,7 @@ export const translations = {
     },
     work: {
       title: 'Progetti in Evidenza',
-      subtitle: 'I miei migliori lavori distribuiti su Vercel',
+      subtitle: 'I miei Progetti',
       viewLive: 'Visualizza in Diretta',
       sourceCode: 'Codice Sorgente',
       technologies: 'Tecnologie',
