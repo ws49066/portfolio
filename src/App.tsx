@@ -1,4 +1,5 @@
 import Menu from "./components/Menu"
+import Chatbot from "./components/Chatbot"
 import AppRoutes from "./routes/routes"
 import { useLocation } from "react-router"
 import { LanguageProvider } from "./context/LanguageContext"
@@ -17,6 +18,7 @@ function App() {
         <main className={`${!hiddenMenu ? 'pt-20' : ''} px-4 md:px-8 lg:px-12 max-w-7xl mx-auto w-full`}>
           <AppRoutes />
         </main>
+        {!hiddenMenu && <Chatbot />}
       </div>
     </LanguageProvider>
   )

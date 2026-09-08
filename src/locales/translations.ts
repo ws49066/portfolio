@@ -83,7 +83,15 @@ export const translations = {
       contactEmail: 'ws49066@gmail.com',
       contactPhone: '+39 393 719 2154',
       contactLocation: 'Italy',
-    }
+    },
+    chatbot: {
+      title: 'AI Assistant',
+      placeholder: 'Ask me anything about Wanderson...',
+      send: 'Send',
+      thinking: 'Thinking...',
+      error: 'Something went wrong. Please try again.',
+      welcome: 'Hi! I\'m an AI assistant. Feel free to ask me about Wanderson\'s experience, skills, or projects!',
+    },
   },
   pt: {
     nav: {
@@ -168,7 +176,15 @@ export const translations = {
       contactEmail: 'ws49066@gmail.com',
       contactPhone: '+39 393 719 2154',
       contactLocation: 'Italy',
-    }
+    },
+    chatbot: {
+      title: 'Assistente IA',
+      placeholder: 'Pergunte sobre o Wanderson...',
+      send: 'Enviar',
+      thinking: 'Pensando...',
+      error: 'Algo deu errado. Tente novamente.',
+      welcome: 'Olá! Sou um assistente de IA. Pergunte à vontade sobre a experiência, habilidades ou projetos do Wanderson!',
+    },
   },
   it: {
     nav: {
@@ -254,7 +270,15 @@ export const translations = {
       contactEmail: 'ws49066@gmail.com',
       contactPhone: '+39 393 719 2154',
       contactLocation: 'Italy',
-    }
+    },
+    chatbot: {
+      title: 'Assistente IA',
+      placeholder: 'Chiedimi di Wanderson...',
+      send: 'Invia',
+      thinking: 'Sto pensando...',
+      error: 'Qualcosa è andato storto. Riprova.',
+      welcome: 'Ciao! Sono un assistente AI. Chiedimi pure dell\'esperienza, delle competenze o dei progetti di Wanderson!',
+    },
   },
 };
 
