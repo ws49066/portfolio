@@ -4,36 +4,41 @@ export const knowledgeBase = `
 ## Personal Profile
 - Full name: Wanderson Oliveira
 - Role: Full Stack Software Engineer
-- Experience: 5+ years (professional career started July 2018)
+- Experience: 8+ years (professional career started July 2018)
 - Current location: Italy
-- Languages: Portuguese (native), English (professional), Italian (learning)
+- Languages: Portuguese (native), English (Intermediate-Advanced, B2), Italian (Basic, A2)
 
 ## Bio
-Full Stack Software Engineer with 5+ years of experience building scalable web applications, automation platforms, and cloud-native solutions. Specialized in React, Next.js, Python, and modern backend architectures, with hands-on experience designing high-impact automation systems that streamline complex business processes and significantly reduce manual effort.
+Full Stack Software Engineer with 8+ years of experience building scalable web applications, automation platforms, and cloud-based solutions. Specialized in React, Next.js, Python, and modern backend architectures, across frontend, backend, DevOps, and Google Cloud Platform. Delivered high-impact automation systems, AI-powered applications, and enterprise solutions that improved operational efficiency and reduced manual processes. Passionate about software architecture, automation, and AI-driven innovation.
 
 ## Work Experience
 
 ### Contabilizei (February 2026 – Present)
 - Position: Mid-Level Software Developer
 - Location: Curitiba, PR, Brazil (remote)
-- Responsibilities: Develops and maintains 21+ automation bots for the company registration (CNPJ) process. Uses Python, FastAPI, Flask, Playwright, and GCP to automate government portal interactions, reducing manual effort and accelerating customer onboarding.
+- Responsibilities: Develops and maintains 21+ automation bots for the company registration (CNPJ) process, using Playwright to interact with government portals (data entry, document retrieval, validation) and Python, FastAPI, and Flask to orchestrate the workflows. Built scalable, event-driven services on Google Cloud Platform (Cloud Run, Cloud Scheduler, Pub/Sub), reducing manual effort, accelerating customer onboarding, and improving automation reliability, monitoring, and error recovery.
 
-### Sidia Instituto de Ciência e Tecnologia (July 2022 – February 2026)
+### Sidia Instituto de Ciência e Tecnologia — Samsung R&D institute (July 2022 – February 2026)
 - Position: Mid-Level Software Developer
 - Location: Manaus, AM, Brazil
-- Responsibilities: Full stack developer working on multiple projects including Samsung binary code validator, AI/NLP chatbot, and Android sample manager.
-- Technologies: Next.js, TypeScript, Python, LLM, Docker
+- Project 1 — Binary code feature validation for pre-release Samsung devices (Latin America): built automated validation of features directly in the binary before it is applied to physical devices, enabling early detection of regressions. Reduced validation time from 2–3 days to approximately 10 minutes.
+- Project 2 — AI chatbot for Sidia internal context: intelligent chatbot using AI and NLP over sensitive internal documents, built with LangChain and the LLaMA model, with Qdrant as vector database for semantic retrieval and custom prompts returning answers with direct document references.
+- Project 3 — Tech Lead, Android Sample Manager for remote testing: led a legacy project managing Android device samples on a remote test farm. Gathered client requirements, managed backlog and delivery schedule, coordinated task distribution across the development team, and maintained constant client communication.
+- Technologies: Next.js, TypeScript, Python, LangChain, LLaMA, Qdrant, LLM, Docker
 
 ### Kodigos Software LTDA (May 2021 – June 2022)
 - Position: Mid-Level Software Developer
 - Location: Manaus, AM, Brazil
-- Responsibilities: Developed a web-based CRUD system for document management and version control. Implemented edit tracking, multi-level permissions, and full traceability.
-- Technologies: Vue.js, C#, Entity Framework, SQL Server
+- Responsibilities: Developed a web-based CRUD system for document management and version control. Implemented edit tracking with user identification and required change justifications, plus role-based access control for administrators and regular users, ensuring full traceability.
+- Technologies: Vue.js, Vuetify, C#, Entity Framework (migrations), SQL Server
 
 ### Womp Telecom (July 2018 – April 2021)
 - Position: Junior Software Developer
 - Location: Manaus, AM, Brazil
-- Responsibilities: Developed Android applications for fleet management, administrative web systems, and TV streaming app. Integrated APIs, managed MySQL databases, and implemented real-time features.
+- Project 1 — Mobile app for corporate fleet drivers: fuel control, vehicle maintenance management, and checklist execution, with a web-based admin system for accessing the collected data.
+- Project 2 — Streaming application using Flussonic: converted multicast networks to unicast, enabling TV channel retransmission on a streaming platform.
+- Project 3 — Urban mapping application: registration and monitoring of city light poles with attributes such as transformers, electrical networks, and fiber optic cables, integrated with Google Maps for asset identification and management.
+- Technologies: Android (Java), MySQL, PHP, Google Maps, Flussonic
 
 ## Education
 - Degree: Bachelor's in Computer Engineering
@@ -44,7 +49,7 @@ Full Stack Software Engineer with 5+ years of experience building scalable web a
 ## Technical Skills
 
 ### Frontend
-JavaScript, TypeScript, React, Next.js, Tailwind CSS, Styled-Components, Zustand, Axios, Playwright
+JavaScript, HTML, CSS, TypeScript, React, Next.js, Redux, Tailwind CSS, Styled-Components, Zustand, Axios, Playwright
 
 ### Backend
 Node.js, Express, Python, FastAPI, Flask, PostgreSQL, MongoDB, MySQL, JWT, REST APIs

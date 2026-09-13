@@ -17,37 +17,41 @@ const knowledgeBase = `
 ## Personal Profile
 - Full name: Wanderson Oliveira
 - Role: Full Stack Software Engineer
-- Experience: 5+ years (professional career started July 2018)
+- Experience: 8+ years (professional career started July 2018)
 - Current location: Italy
-- Languages: Portuguese (native), English (professional), Italian (learning)
+- Languages: Portuguese (native), English (Intermediate-Advanced, B2), Italian (Basic, A2)
 
 ## Bio
-Full Stack Software Engineer with 5+ years of experience building scalable web applications, automation platforms, and cloud-native solutions. Specialized in React, Next.js, Python, and modern backend architectures, with hands-on experience designing high-impact automation systems.
+Full Stack Software Engineer with 8+ years of experience building scalable web applications, automation platforms, and cloud-based solutions. Specialized in React, Next.js, Python, and modern backend architectures, across frontend, backend, DevOps, and Google Cloud Platform. Delivered high-impact automation systems, AI-powered applications, and enterprise solutions. Passionate about software architecture, automation, and AI-driven innovation.
 
 ## Work Experience
 
 ### Contabilizei (February 2026 – Present)
 - Position: Mid-Level Software Developer
-- Develops and maintains 21+ automation bots for CNPJ registration using Python, FastAPI, Flask, Playwright, and GCP.
+- Develops and maintains 21+ automation bots for CNPJ registration using Playwright on government portals and Python, FastAPI, Flask. Event-driven services on GCP (Cloud Run, Cloud Scheduler, Pub/Sub), improving reliability, monitoring, and error recovery.
 
-### Sidia Instituto de Ciência e Tecnologia (July 2022 – February 2026)
+### Sidia Instituto de Ciência e Tecnologia — Samsung R&D institute (July 2022 – February 2026)
 - Position: Mid-Level Software Developer
-- Full stack developer: Samsung binary validator, AI/NLP chatbot, Android sample manager.
-- Technologies: Next.js, TypeScript, Python, LLM, Docker
+- Samsung binary code validator: cut feature validation from 2–3 days to ~10 minutes.
+- AI/NLP chatbot over internal documents: LangChain, LLaMA, Qdrant vector database, custom prompts with document references.
+- Tech Lead, Android Sample Manager (remote test farm): client requirements, backlog, delivery schedule, team coordination.
+- Technologies: Next.js, TypeScript, Python, LangChain, LLaMA, Qdrant, LLM, Docker
 
 ### Kodigos Software LTDA (May 2021 – June 2022)
 - Position: Mid-Level Software Developer
-- Document management CRUD with multi-level permissions. Technologies: Vue.js, C#, Entity Framework, SQL Server
+- Document management CRUD with edit tracking, change justifications, and role-based access control. Technologies: Vue.js, Vuetify, C#, Entity Framework, SQL Server
 
 ### Womp Telecom (July 2018 – April 2021)
 - Position: Junior Software Developer
-- Android apps for fleet management, web admin systems, TV streaming app.
+- Fleet driver mobile app (fuel control, maintenance, checklists) with web admin system.
+- Streaming app with Flussonic: multicast-to-unicast conversion for TV channel retransmission.
+- Urban mapping app: city light poles, transformers, electrical networks, fiber optic cables, integrated with Google Maps.
 
 ## Education
 - Bachelor's in Computer Engineering — Uninorte, Manaus (2014–2021)
 
 ## Technical Skills
-- Frontend: JavaScript, TypeScript, React, Next.js, Tailwind CSS, Zustand, Axios, Playwright
+- Frontend: JavaScript, HTML, CSS, TypeScript, React, Next.js, Redux, Tailwind CSS, Zustand, Axios, Playwright
 - Backend: Node.js, Express, Python, FastAPI, Flask, PostgreSQL, MongoDB, MySQL, JWT
 - DevOps & Cloud: Docker, Git, CI/CD, Linux, GitHub Actions, GCP, Jenkins, Vercel
 - AI: LLM, LangChain, RAG, Qdrant, NLP, Botpress, Ollama

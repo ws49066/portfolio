@@ -10,7 +10,7 @@ export const translations = {
       title: 'Software Developer',
       greeting: 'Hello I am',
       name: 'Wanderson Oliveira',
-      description: `Full Stack Software Engineer with 5+ years of experience building scalable web applications, automation platforms, and cloud-native solutions. Specialized in React, Next.js, Python, and modern backend architectures, with hands-on experience designing high-impact automation systems that streamline complex business processes and significantly reduce manual effort.`,
+      description: `Full Stack Software Engineer with 8+ years of experience building scalable web applications, automation platforms, and cloud-based solutions. Specialized in React, Next.js, Python, and modern backend architectures, across frontend, backend, DevOps, and Google Cloud Platform. Delivered high-impact automation systems, AI-powered applications, and enterprise solutions that improved operational efficiency and reduced manual processes — passionate about software architecture, automation, and AI-driven innovation.`,
       downloadCV: 'Download CV',
       viewProjects: 'View Projects',
       cvModal: {
@@ -105,7 +105,7 @@ export const translations = {
       title: 'Desenvolvedor de Software',
       greeting: 'Olá, eu sou',
       name: 'Wanderson Oliveira',
-      description: `Engenheiro de Software Full Stack com mais de 5 anos de experiência no desenvolvimento de aplicações web escaláveis, plataformas de automação e soluções em nuvem. Especializado em React, Next.js, Python e arquiteturas modernas de backend, com atuação em frontend, backend, DevOps e Google Cloud Platform.`,
+      description: `Engenheiro de Software Full Stack com mais de 8 anos de experiência no desenvolvimento de aplicações web escaláveis, plataformas de automação e soluções em nuvem. Especializado em React, Next.js, Python e arquiteturas modernas de backend, com atuação em frontend, backend, DevOps e Google Cloud Platform. Participei da entrega de sistemas de automação de alto impacto, aplicações com inteligência artificial e soluções corporativas que aumentaram a eficiência operacional e reduziram processos manuais. Apaixonado por arquitetura de software, automação e inovação com IA.`,
       downloadCV: 'Baixar CV',
       viewProjects: 'Ver Projetos',
       cvModal: {
@@ -200,7 +200,7 @@ export const translations = {
       title: 'Sviluppatore Software',
       greeting: 'Ciao, sono',
       name: 'Wanderson Oliveira',
-      description: `Ingegnere Software Full Stack con oltre 5 anni di esperienza nello sviluppo di applicazioni web scalabili, piattaforme di automazione e soluzioni cloud. Specializzato in React, Next.js, Python e moderne architetture backend, con esperienza in frontend, backend, DevOps e Google Cloud Platform.`,
+      description: `Ingegnere Software Full Stack con oltre 8 anni di esperienza nello sviluppo di applicazioni web scalabili, piattaforme di automazione e soluzioni cloud. Specializzato in React, Next.js, Python e moderne architetture backend, con esperienza in frontend, backend, DevOps e Google Cloud Platform. Ha contribuito allo sviluppo di sistemi di automazione ad alto impatto, applicazioni basate sull'intelligenza artificiale e soluzioni aziendali che hanno migliorato l'efficienza operativa e ridotto i processi manuali. Appassionato di architettura software, automazione e innovazione guidata dall'IA.`,
       downloadCV: 'Scarica CV',
       viewProjects: 'Visualizza Progetti',
       cvModal: {
