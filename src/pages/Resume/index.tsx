@@ -1,5 +1,5 @@
 import { useTranslation } from '../../hooks/useTranslation';
-import { Briefcase, BookOpen, Award } from 'lucide-react';
+import { Briefcase, BookOpen, Award, Languages as LanguagesIcon } from 'lucide-react';
 
 export default function Resume() {
     const { t, language } = useTranslation();
@@ -18,7 +18,7 @@ export default function Resume() {
                 position: 'Desenvolvedor de Software - Pleno',
                 period: '07/2022 - 02/2026',
                 location: 'Manaus, AM, Brasil',
-                description: 'Desenvolvedor full stack trabalhando em múltiplos projetos incluindo validador de binários Samsung, chatbot com IA/NLP e gerenciador de amostras Android. Utilizo Next.js, TypeScript, Python, LLM e Docker.',
+                description: 'Desenvolvedor full stack em três projetos principais: criei um validador de binários que reduziu o tempo de validação de features Samsung de 2-3 dias para ~10 minutos; desenvolvi um chatbot de IA/NLP com LangChain, LLaMA e Qdrant para busca semântica segura em documentos internos; e atuei como Tech Lead do Gerenciador de Amostras Android, responsável por requisitos do cliente, backlog e coordenação da equipe.',
             },
             {
                 company: 'Kodigos Software LTDA',
@@ -48,7 +48,7 @@ export default function Resume() {
                 position: 'Mid-Level Software Developer',
                 period: '07/2022 - 02/2026',
                 location: 'Manaus, AM, Brazil',
-                description: 'Full stack developer working on multiple projects including Samsung binary code validator, AI/NLP chatbot, and Android sample manager. I use Next.js, TypeScript, Python, LLM, and Docker.',
+                description: 'Full stack developer across three key projects: built a binary code validator that cut Samsung feature validation time from 2-3 days to ~10 minutes; developed an AI/NLP chatbot with LangChain, LLaMA, and Qdrant for secure semantic search over internal documents; and served as Tech Lead for the Android Sample Manager, owning client requirements, backlog, and team coordination.',
             },
             {
                 company: 'Kodigos Software LTDA',
@@ -78,7 +78,7 @@ export default function Resume() {
                 position: 'Sviluppatore di Software Mid-Level',
                 period: '07/2022 - 02/2026',
                 location: 'Manaus, AM, Brasile',
-                description: 'Sviluppatore fullstack che lavora su più progetti inclusi validatore di codice binario Samsung, chatbot con IA/NLP e gestore di campioni Android. Utilizzo Next.js, TypeScript, Python, LLM e Docker.',
+                description: `Sviluppatore full stack su tre progetti principali: ho creato un validatore di codice binario che ha ridotto il tempo di validazione delle funzionalità Samsung da 2-3 giorni a circa 10 minuti; ho sviluppato un chatbot AI/NLP con LangChain, LLaMA e Qdrant per la ricerca semantica sicura su documenti interni; e ho ricoperto il ruolo di Tech Lead per l'Android Sample Manager, occupandomi di requisiti del cliente, backlog e coordinamento del team.`,
             },
             {
                 company: 'Kodigos Software LTDA',
@@ -124,13 +124,32 @@ export default function Resume() {
         ],
     };
 
+    const languagesData = {
+        pt: [
+            { name: 'Português', level: 'Nativo' },
+            { name: 'Inglês', level: 'Intermediário-Avançado (B2)' },
+            { name: 'Italiano', level: 'Básico (A2)' },
+        ],
+        en: [
+            { name: 'Portuguese', level: 'Native' },
+            { name: 'English', level: 'Intermediate-Advanced (B2)' },
+            { name: 'Italian', level: 'Basic (A2)' },
+        ],
+        it: [
+            { name: 'Portoghese', level: 'Madrelingua' },
+            { name: 'Inglese', level: 'Intermedio-Avanzato (B2)' },
+            { name: 'Italiano', level: 'Base (A2)' },
+        ],
+    };
+
     const experiences = experiencesData[language as keyof typeof experiencesData] || experiencesData.pt;
     const education = educationData[language as keyof typeof educationData] || educationData.pt;
+    const languagesList = languagesData[language as keyof typeof languagesData] || languagesData.pt;
 
     const skills = [
         {
             category: 'Frontend',
-            skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Styled-Components', 'Zustand', 'Axios', 'Playwright'],
+            skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Redux', 'Tailwind CSS', 'Styled-Components', 'Zustand', 'Axios', 'Playwright'],
         },
         {
             category: 'Backend',
@@ -248,6 +267,28 @@ export default function Resume() {
                                 </li>
                             ))}
                         </ul>
+                    </div>
+                ))}
+            </div>
+        </section>
+
+        {/* Languages Section */}
+        <section>
+            <div className='flex items-center gap-3 mb-8'>
+                <div className='p-2 rounded-lg bg-green-400/20'>
+                    <LanguagesIcon className='text-green-400' size={24} />
+                </div>
+                <h2 className='text-2xl font-bold text-white'>{t('resume.languages')}</h2>
+            </div>
+
+            <div className='grid grid-cols-1 sm:grid-cols-3 gap-6'>
+                {languagesList.map((lang, idx) => (
+                    <div
+                        key={idx}
+                        className='group bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-green-400/20 rounded-xl p-6 hover:border-green-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/10 hover:-translate-y-2'
+                    >
+                        <h3 className='text-white font-bold text-lg mb-1'>{lang.name}</h3>
+                        <p className='text-green-400 text-sm'>{lang.level}</p>
                     </div>
                 ))}
             </div>

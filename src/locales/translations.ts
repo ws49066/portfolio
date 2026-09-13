@@ -59,6 +59,7 @@ export const translations = {
       experience: 'Experience',
       skills: 'Skills',
       education: 'Education',
+      languages: 'Languages',
     },
     contact: {
       title: 'Get in Touch',
@@ -105,6 +106,7 @@ export const translations = {
       greeting: 'Olá, eu sou',
       name: 'Wanderson Oliveira',
       description: `Engenheiro de Software Full Stack com mais de 5 anos de experiência no desenvolvimento de aplicações web escaláveis, plataformas de automação e soluções em nuvem. Especializado em React, Next.js, Python e arquiteturas modernas de backend, com atuação em frontend, backend, DevOps e Google Cloud Platform.`,
+      downloadCV: 'Baixar CV',
       viewProjects: 'Ver Projetos',
       cvModal: {
         title: 'Escolha o Idioma do CV',
@@ -152,6 +154,7 @@ export const translations = {
       experience: 'Experiência',
       skills: 'Habilidades',
       education: 'Educação',
+      languages: 'Idiomas',
     },
     contact: {
       title: 'Entre em Contato',
@@ -246,6 +249,7 @@ export const translations = {
       experience: 'Esperienza',
       skills: 'Competenze',
       education: 'Educazione',
+      languages: 'Lingue',
     },
     contact: {
       title: 'Mettiamoci in Contatto',
