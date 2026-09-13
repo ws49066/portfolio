@@ -11,7 +11,7 @@ export default function Resume() {
                 position: 'Desenvolvedor de Software - Pleno',
                 period: '02/2026 - Atual',
                 location: 'Curitiba, PR, Brasil',
-                description: 'Desenvolvimento e manutenção de mais de 21 bots de automação para o processo de abertura de empresas (CNPJ). Utilizo Python, FastAPI, Flask, Playwright e GCP para automatizar interações com portais governamentais, reduzindo a intervenção manual e acelerando o onboarding de clientes.',
+                description: 'Desenvolvo e mantenho mais de 21 bots de automação para o processo de abertura de empresas (CNPJ), utilizando Playwright para interagir com portais governamentais e Python, FastAPI e Flask para orquestrar os fluxos. Construí serviços escaláveis e orientados a eventos no GCP (Cloud Run, Cloud Scheduler, Pub/Sub), reduzindo a intervenção manual, acelerando o onboarding de clientes e aumentando a confiabilidade e recuperação de falhas das automações.',
             },
             {
                 company: 'Sidia Instituto de Ciência e Tecnologia',
@@ -25,14 +25,14 @@ export default function Resume() {
                 position: 'Desenvolvedor de Software - Pleno',
                 period: '05/2021 - 06/2022',
                 location: 'Manaus, AM, Brasil',
-                description: 'Desenvolvi sistema web CRUD para gerenciamento e versionamento de documentos. Implementei controle de edições, permissões multi-nível e rastreabilidade. Utilizei Vue.js, C#, Entity Framework e SQL Server.',
+                description: 'Desenvolvi sistema web CRUD para gerenciamento e versionamento de documentos. Implementei controle de edições, permissões multi-nível e rastreabilidade. Utilizei Vue.js, Vuetify, C#, Entity Framework e SQL Server.',
             },
             {
                 company: 'Womp Telecom',
                 position: 'Desenvolvedor de Software - Junior',
                 period: '07/2018 - 04/2021',
                 location: 'Manaus, AM, Brasil',
-                description: 'Desenvolvi aplicativos Android para controle de frotas, sistemas web administrativos e app de streaming de TV. Integrei APIs, gerenciei bancos de dados MySQL e implementei funcionalidades de tempo real.',
+                description: 'Desenvolvi um aplicativo mobile para motoristas de frotas com controle de combustível, manutenção de veículos e checklists, além de um painel administrativo web. Criei um app de streaming com Flussonic para conversão de multicast para unicast na retransmissão de canais de TV. Também desenvolvi uma aplicação de mapeamento urbano para cadastro e monitoramento de postes de iluminação, transformadores e redes de fibra óptica, integrada ao Google Maps.',
             },
         ],
         en: [
@@ -41,7 +41,7 @@ export default function Resume() {
                 position: 'Mid-Level Software Developer',
                 period: '02/2026 - Present',
                 location: 'Curitiba, PR, BRAZIL',
-                description: 'Develop and maintain over 21 automation bots for the company registration (CNPJ) process. Using Python, FastAPI, Flask, Playwright, and GCP to automate government portal interactions, reducing manual effort and accelerating customer onboarding.',
+                description: 'Develop and maintain over 21 automation bots for the company registration (CNPJ) process, using Playwright to interact with government portals and Python, FastAPI, and Flask to orchestrate the workflows. Built scalable, event-driven services on GCP (Cloud Run, Cloud Scheduler, Pub/Sub), reducing manual effort, accelerating customer onboarding, and improving automation reliability and error recovery.',
             },
             {
                 company: 'Sidia Instituto de Ciência e Tecnologia',
@@ -55,14 +55,14 @@ export default function Resume() {
                 position: 'Mid-Level Software Developer',
                 period: '05/2021 - 06/2022',
                 location: 'Manaus, AM, Brazil',
-                description: 'Developed a web-based CRUD system for document management and version control. Implemented edit tracking, multi-level permissions, and full traceability. Used Vue.js, C#, Entity Framework, and SQL Server.',
+                description: 'Developed a web-based CRUD system for document management and version control. Implemented edit tracking, multi-level permissions, and full traceability. Used Vue.js, Vuetify, C#, Entity Framework, and SQL Server.',
             },
             {
                 company: 'Womp Telecom',
                 position: 'Junior Software Developer',
                 period: '07/2018 - 04/2021',
                 location: 'Manaus, AM, Brazil',
-                description: 'Developed Android applications for fleet management, administrative web systems, and TV streaming app. Integrated APIs, managed MySQL databases, and implemented real-time features.',
+                description: "Developed a mobile application for corporate fleet drivers with fuel control, vehicle maintenance, and checklist features, plus an admin web dashboard. Built a streaming app using Flussonic to convert multicast to unicast for TV channel retransmission. Also created an urban mapping application for registering and monitoring city light poles, transformers, and fiber optic infrastructure, integrated with Google Maps.",
             },
         ],
         it: [
@@ -71,7 +71,7 @@ export default function Resume() {
                 position: 'Sviluppatore di Software Mid-Level',
                 period: '02/2026 - Presente',
                 location: 'Curitiba, PR, Brasile',
-                description: `Sviluppo e manutenzione di oltre 21 bot di automazione per il processo di costituzione delle imprese (CNPJ). Utilizzo Python, FastAPI, Flask, Playwright e GCP per automatizzare le interazioni con i portali governativi, riducendo l'intervento manuale e accelerando l'onboarding dei clienti.`,
+                description: `Sviluppo e mantengo oltre 21 bot di automazione per il processo di costituzione di imprese (CNPJ), utilizzando Playwright per interagire con i portali governativi e Python, FastAPI e Flask per orchestrare i flussi. Ho costruito servizi scalabili ed event-driven su GCP (Cloud Run, Cloud Scheduler, Pub/Sub), riducendo l'intervento manuale, accelerando l'onboarding dei clienti e migliorando l'affidabilità e il recupero degli errori delle automazioni.`,
             },
             {
                 company: 'Sidia Instituto de Ciência e Tecnologia',
@@ -85,14 +85,14 @@ export default function Resume() {
                 position: 'Sviluppatore di Software Mid-Level',
                 period: '05/2021 - 06/2022',
                 location: 'Manaus, AM, Brasile',
-                description: 'Ho sviluppato un sistema CRUD basato sul web per la gestione dei documenti e il controllo delle versioni. Ho implementato il tracciamento delle modifiche, le autorizzazioni multi-livello e la tracciabilità completa. Ho utilizzato Vue.js, C#, Entity Framework e SQL Server.',
+                description: 'Ho sviluppato un sistema CRUD basato sul web per la gestione dei documenti e il controllo delle versioni. Ho implementato il tracciamento delle modifiche, le autorizzazioni multi-livello e la tracciabilità completa. Ho utilizzato Vue.js, Vuetify, C#, Entity Framework e SQL Server.',
             },
             {
                 company: 'Womp Telecom',
                 position: 'Sviluppatore di Software Junior',
                 period: '07/2018 - 04/2021',
                 location: 'Manaus, AM, Brasile',
-                description: 'Ho sviluppato applicazioni Android per la gestione della flotta, sistemi web amministrativi e app di streaming TV. Ho integrato API, gestito database MySQL e implementato funzionalità in tempo reale.',
+                description: "Ho sviluppato un'applicazione mobile per autisti di flotte aziendali con controllo carburante, manutenzione veicoli e checklist, oltre a una dashboard web amministrativa. Ho creato un'app di streaming con Flussonic per la conversione da multicast a unicast per la ritrasmissione di canali TV. Ho inoltre sviluppato un'applicazione di mappatura urbana per la registrazione e il monitoraggio di pali della luce, trasformatori e reti in fibra ottica, integrata con Google Maps.",
             },
         ],
     };
@@ -117,7 +117,7 @@ export default function Resume() {
         it: [
             {
                 school: 'Uninorte - Laureate International',
-                degree: 'Laurea in Ingegneria Informatica',
+                degree: 'Laurea triennale in Ingegneria Informatica',
                 year: '07/2014 - 06/2021',
                 location: 'Manaus, AM, Brasile',
             },
@@ -149,7 +149,7 @@ export default function Resume() {
     const skills = [
         {
             category: 'Frontend',
-            skills: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Redux', 'Tailwind CSS', 'Styled-Components', 'Zustand', 'Axios', 'Playwright'],
+            skills: ['JavaScript', 'HTML', 'CSS', 'TypeScript', 'React', 'Next.js', 'Redux', 'Tailwind CSS', 'Styled-Components', 'Zustand', 'Axios', 'Playwright'],
         },
         {
             category: 'Backend',
