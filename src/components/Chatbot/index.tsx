@@ -75,10 +75,10 @@ export default function Chatbot() {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 font-[JetBrainsMono] flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 font-[JetBrainsMono] flex flex-col items-end gap-3">
       {/* Chat Panel */}
       {isOpen && (
-        <div className="w-80 md:w-96 flex flex-col bg-gradient-to-br from-slate-800 to-slate-900 border border-green-400/30 rounded-2xl shadow-2xl shadow-green-500/10 animate-fade-in overflow-hidden"
+        <div className="w-[calc(100vw-2rem)] max-w-80 md:max-w-96 flex flex-col bg-gradient-to-br from-slate-800 to-slate-900 border border-green-400/30 rounded-2xl shadow-2xl shadow-green-500/10 animate-fade-in overflow-hidden"
           style={{ maxHeight: 'min(520px, calc(100vh - 120px))' }}
         >
           {/* Header */}

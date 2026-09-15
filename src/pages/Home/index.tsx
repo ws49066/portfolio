@@ -36,7 +36,7 @@ export default function Home() {
                     {/* Main Title */}
                     <div>
                         <h4 className='text-xl text-gray-400 mb-2 animate-fade-in'>{t('home.greeting')}</h4>
-                        <h3 className='text-5xl lg:text-7xl font-bold bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 bg-clip-text text-transparent animate-fade-in-delay leading-tight'>
+                        <h3 className='text-4xl sm:text-5xl lg:text-7xl font-bold bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 bg-clip-text text-transparent animate-fade-in-delay leading-tight'>
                             {t('home.name')}
                         </h3>
                     </div>

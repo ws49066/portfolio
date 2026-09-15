@@ -227,14 +227,16 @@ export default function Work() {
                 >
                     <div className='bg-slate-900 border border-green-400/30 rounded-2xl w-full max-w-7xl max-h-[95vh] h-full overflow-hidden flex flex-col shadow-2xl shadow-green-500/20'>
                         {/* Modal Header */}
-                        <div className='flex justify-between items-center p-4 border-b border-green-400/20 bg-slate-900/90'>
-                            <div className='flex items-center gap-3'>
-                                <div className='w-3 h-3 rounded-full bg-red-500'></div>
-                                <div className='w-3 h-3 rounded-full bg-yellow-500'></div>
-                                <div className='w-3 h-3 rounded-full bg-green-500'></div>
-                                <span className='ml-3 text-sm text-gray-400 font-mono'>{selectedProject.name}</span>
+                        <div className='flex flex-wrap gap-3 justify-between items-center p-4 border-b border-green-400/20 bg-slate-900/90'>
+                            <div className='flex items-center gap-3 min-w-0'>
+                                <div className='hidden sm:flex items-center gap-2 shrink-0'>
+                                    <div className='w-3 h-3 rounded-full bg-red-500'></div>
+                                    <div className='w-3 h-3 rounded-full bg-yellow-500'></div>
+                                    <div className='w-3 h-3 rounded-full bg-green-500'></div>
+                                </div>
+                                <span className='sm:ml-1 text-sm text-gray-400 font-mono truncate'>{selectedProject.name}</span>
                             </div>
-                            <div className='flex items-center gap-3'>
+                            <div className='flex items-center gap-3 shrink-0'>
                                 <a
                                     href={selectedProject.liveUrl}
                                     target='_blank'
@@ -242,7 +244,7 @@ export default function Work() {
                                     className='text-sm text-green-400 hover:text-green-300 transition-colors flex items-center gap-1'
                                 >
                                     <ExternalLink size={14} />
-                                    {t('work.openInNewTab')}
+                                    <span className='hidden sm:inline'>{t('work.openInNewTab')}</span>
                                 </a>
                                 <button
                                     onClick={() => setSelectedProject(null)}
@@ -254,7 +256,7 @@ export default function Work() {
                         </div>
 
                         {/* Modal Body - Interactive Iframe */}
-                        <div className='flex-1 bg-white overflow-hidden relative' style={{ height: '85vh' }}>
+                        <div className='flex-1 min-h-0 bg-white overflow-hidden relative'>
                             <iframe
                                 src={selectedProject.liveUrl}
                                 title={selectedProject.name}
@@ -265,11 +267,11 @@ export default function Work() {
                         </div>
 
                         {/* Modal Footer */}
-                        <div className='border-t border-green-400/20 p-4 bg-slate-900/90 flex justify-between items-center'>
-                            <div className='text-sm text-gray-400'>
+                        <div className='border-t border-green-400/20 p-4 bg-slate-900/90 flex flex-col sm:flex-row gap-3 sm:justify-between sm:items-center'>
+                            <div className='text-sm text-gray-400 truncate'>
                                 {selectedProject.technologies.slice(0, 4).join(' • ')}
                             </div>
-                            <div className='flex gap-3'>
+                            <div className='flex gap-3 shrink-0'>
                                 <a
                                     href={selectedProject.githubUrl}
                                     target='_blank'
