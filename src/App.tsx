@@ -3,6 +3,7 @@ import Chatbot from "./components/Chatbot"
 import AppRoutes from "./routes/routes"
 import { useLocation } from "react-router"
 import { LanguageProvider } from "./context/LanguageContext"
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <AppRoutes />
         </main>
         {!hiddenMenu && <Chatbot />}
+        <Analytics />
       </div>
     </LanguageProvider>
   )
