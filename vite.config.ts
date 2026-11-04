@@ -149,6 +149,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   return {
+    // GitHub Pages serve o site em /portfolio/; na Vercel continua na raiz.
+    base: process.env.GITHUB_PAGES === 'true' ? '/portfolio/' : '/',
     plugins: [
       react(),
       tailwindcss(),

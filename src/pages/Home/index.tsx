@@ -13,7 +13,7 @@ export default function Home() {
     const handleDownloadCV = (language: 'PT' | 'EN' | 'IT') => {
         const fileName = `Wanderson-Resume-${language}.pdf`;
         const link = document.createElement('a');
-        link.href = `/cv/${fileName}`;
+        link.href = `${import.meta.env.BASE_URL}cv/${fileName}`;
         link.download = fileName;
         document.body.appendChild(link);
         link.click();

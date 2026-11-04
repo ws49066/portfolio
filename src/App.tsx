@@ -19,7 +19,7 @@ function App() {
         <main className={`${!hiddenMenu ? 'pt-20' : ''} px-4 md:px-8 lg:px-12 max-w-7xl mx-auto w-full`}>
           <AppRoutes />
         </main>
-        {!hiddenMenu && <Chatbot />}
+        {!hiddenMenu && import.meta.env.VITE_CHAT_ENABLED !== 'false' && <Chatbot />}
         <Analytics />
       </div>
     </LanguageProvider>
