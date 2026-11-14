@@ -13,6 +13,39 @@ interface Project {
     featured?: boolean;
 }
 
+// Miniatura do projeto: tenta a imagem principal, depois um segundo serviço de captura
+// e, se nenhum responder, mostra um cartão com o nome (em vez do ícone de imagem quebrada).
+function ProjectThumbnail({ project }: { project: Project }) {
+    const sources = [
+        project.image,
+        `https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.liveUrl)}?w=1200&h=800`,
+    ].filter((src): src is string => Boolean(src));
+    const [step, setStep] = useState(0);
+
+    if (step >= sources.length) {
+        return (
+            <div className='w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-800/50 to-slate-900/50'>
+                <div className='text-center p-6'>
+                    <div className='w-16 h-16 mx-auto mb-4 rounded-lg bg-green-400/20 flex items-center justify-center'>
+                        <Eye size={32} className='text-green-400' />
+                    </div>
+                    <p className='text-gray-200 font-semibold'>{project.name}</p>
+                </div>
+            </div>
+        );
+    }
+
+    return (
+        <img
+            key={sources[step]}
+            src={sources[step]}
+            alt={`${project.name} preview`}
+            onError={() => setStep((current) => current + 1)}
+            className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-700'
+        />
+    );
+}
+
 export default function Work() {
     const { t } = useTranslation();
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -194,11 +227,7 @@ export default function Work() {
                             {/* Project Preview */}
                             <div className={`relative h-64 md:h-full min-h-[300px] md:min-h-full overflow-hidden bg-gradient-to-br from-slate-700 to-slate-800 ${index % 2 === 1 ? 'md:order-1' : 'md:order-2'}`}>
                                 {project.image ? (
-                                    <img
-                                        src={project.image}
-                                        alt={`${project.name} preview`}
-                                        className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-700'
-                                    />
+                                    <ProjectThumbnail project={project} />
                                 ) : (
                                     <div className='w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-800/50 to-slate-900/50'>
                                         <div className='text-center p-6'>
