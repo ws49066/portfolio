@@ -59,7 +59,7 @@ Full Stack Software Engineer with 8+ years of experience building scalable web a
 ## Featured Projects
 - Loan Management Dashboard: Next.js, React, TypeScript, Tailwind, Zod, Zustand, JWT — https://cheerful-puppy-9f8594.netlify.app/login
 - Loan Management API: Python, FastAPI, PostgreSQL, JWT, RBAC, Docker — https://loan-management-backend-w4by.onrender.com/docs
-- TimeHub: Next.js, Express, MySQL, Docker, Vercel — https://papaya-cranachan-787dee.netlify.app/
+- TimeHub: Next.js, Express, MySQL, Docker, Netlify — https://papaya-cranachan-787dee.netlify.app/
 - Pokédex: Next.js, PokéAPI — https://ws49066.github.io/pokedex_nextjs/
 - Memory Game: Next.js, TypeScript, Tailwind — https://ws49066.github.io/memory-game-nextjs/
 
