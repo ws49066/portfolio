@@ -65,7 +65,7 @@ LLM (Large Language Models), LangChain, RAG (Retrieval-Augmented Generation), Qd
 ### Loan Management Dashboard
 - Description: Web platform for managing loans, clients, installments, and payments with secure authentication, financial dashboards, and contract tracking.
 - Technologies: Next.js, React, TypeScript, Tailwind CSS, Axios, React Hook Form, Zod, Zustand, JWT Authentication, Vercel
-- Live: https://loan-management-frontend-nine.vercel.app/login
+- Live: https://cheerful-puppy-9f8594.netlify.app/login
 - GitHub: https://github.com/ws49066/loan_management_frontend
 
 ### Loan Management API
@@ -77,19 +77,19 @@ LLM (Large Language Models), LangChain, RAG (Retrieval-Augmented Generation), Qd
 ### TimeHub – Appointment Management System
 - Description: Scheduling solution for administrators to manage clients, rooms, and appointments; customers can book services easily.
 - Technologies: Next.js, React, TypeScript, Tailwind CSS, Zustand, React Hook Form, Zod, Axios, Express.js, MySQL, JWT, Docker, Vercel
-- Live: https://time-hub-frontend.vercel.app/
+- Live: https://papaya-cranachan-787dee.netlify.app/
 - GitHub: https://github.com/ws49066/TimeHub_frontend
 
 ### Pokédex
 - Description: Modern responsive web app to explore Pokémon with search, type filtering (18 categories), infinite scroll, and animated statistics.
 - Technologies: Next.js, React, TypeScript, Tailwind CSS, PokéAPI, Vercel
-- Live: https://pokedex-nextjs-ochre.vercel.app/
+- Live: https://ws49066.github.io/pokedex_nextjs/
 - GitHub: https://github.com/ws49066/pokedex_nextjs
 
 ### Memory Game
 - Description: Interactive memory card game with card flip animations, score tracking, timer, and multiple difficulty levels.
 - Technologies: Next.js, React, TypeScript, Tailwind CSS, Vercel
-- Live: https://memory-game-nextjs-virid.vercel.app/
+- Live: https://ws49066.github.io/memory-game-nextjs/
 - GitHub: https://github.com/ws49066/memory-game-nextjs
 
 ## Contact

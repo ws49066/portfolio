@@ -57,11 +57,11 @@ Full Stack Software Engineer with 8+ years of experience building scalable web a
 - AI: LLM, LangChain, RAG, Qdrant, NLP, Botpress, Ollama
 
 ## Featured Projects
-- Loan Management Dashboard: Next.js, React, TypeScript, Tailwind, Zod, Zustand, JWT — https://loan-management-frontend-nine.vercel.app/login
+- Loan Management Dashboard: Next.js, React, TypeScript, Tailwind, Zod, Zustand, JWT — https://cheerful-puppy-9f8594.netlify.app/login
 - Loan Management API: Python, FastAPI, PostgreSQL, JWT, RBAC, Docker — https://loan-management-backend-w4by.onrender.com/docs
-- TimeHub: Next.js, Express, MySQL, Docker, Vercel — https://time-hub-frontend.vercel.app/
-- Pokédex: Next.js, PokéAPI — https://pokedex-nextjs-ochre.vercel.app/
-- Memory Game: Next.js, TypeScript, Tailwind — https://memory-game-nextjs-virid.vercel.app/
+- TimeHub: Next.js, Express, MySQL, Docker, Vercel — https://papaya-cranachan-787dee.netlify.app/
+- Pokédex: Next.js, PokéAPI — https://ws49066.github.io/pokedex_nextjs/
+- Memory Game: Next.js, TypeScript, Tailwind — https://ws49066.github.io/memory-game-nextjs/
 
 ## Contact
 - Email: ws49066@gmail.com
