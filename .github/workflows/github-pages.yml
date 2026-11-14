@@ -25,7 +25,7 @@ jobs:
       - run: npm run build
         env:
           GITHUB_PAGES: 'true'
-          VITE_CHAT_ENABLED: 'false'
+          VITE_CHAT_API_URL: 'https://portfolio-chat.ws49066.workers.dev'
       # O GitHub Pages não tem rewrites: o 404.html devolve o app para as rotas /resume, /work etc.
       - run: cp dist/index.html dist/404.html
       - run: touch dist/.nojekyll
